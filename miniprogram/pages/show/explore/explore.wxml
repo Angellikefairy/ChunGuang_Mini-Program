@@ -1,0 +1,83 @@
+<view class="Explore" style="height:25vh;background-color:;font-size:7vh;">
+    <view>Explore</view>
+    <view class="searchBar" style="height:8vh;margin-right:20vw;background-color:;margin-top:4vh;display:flex;flex-direction:row;align-items:center;box-shadow:0 3vh 5vh #E6E6E6">
+       <image src="/images/search.svg" style="width:5vh;height:5vh;margin-left:2vw;" background-size="cover" ></image>
+    </view>
+</view>
+
+
+<view class="exhibition" style="width:100%;height:50vh;background-color:;margin-top:3vh;">
+   <view class="title" style="display:flex;flex-direction:row;justify-content:space-between;margin-right:12vw;">
+      <view>摄影</view>
+      <view style="color:#D8D8D8"></view>
+   </view>
+
+
+   <scroll-view scroll-x bindscroll="bindscroll"> 
+   <view class="scroll" style="display:flex;flex-direction:row;background-color:">
+      <view wx:for="{{One}}" wx:for-index="idx" bindtap="toDetail" id="{{idx}}">
+        <view style="width:45vw;height:39vh;background-color:;margin-right:5vw;margin-top:3.5vh">
+          <view style="height:100%;width:100%;">
+            <image
+            class="list-avatar"
+            style="width:100%;height:100%;border-radius:1vw;"
+            src="{{One[idx].webformatURL}}"
+            background-size="cover"
+        ></image>
+          </view>
+          </view>
+          
+      </view>
+   </view>
+  </scroll-view>
+
+</view>
+
+<view class="exhibition" style="width:100%;background-color:;margin-top:3vh;">
+   <view class="title" style="display:flex;flex-direction:row;justify-content:space-between;margin-right:12vw;">
+      <view>一言</view>
+      <view style="color:#D8D8D8"></view>
+   </view>
+
+
+  <view class="poem" style="background-color:#FAFAFA;margin-right:20vw;margin-top:3.5vh;padding-bottom:2vh;">
+     <image style="width:100%;height:25vh;" background-size="cover" src="{{photo}}">  
+     </image>
+     <view class="poem" style="margin-top:1vw;padding-bottom:1vw;background-color:;">
+     {{text}}
+     </view>
+  </view>
+</view>
+
+<view class="exhibition" style="width:100%;height:40vh;background-color:;margin-top:3vh;">
+   <view class="title" style="display:flex;flex-direction:row;justify-content:space-between;margin-right:12vw;">
+      <view>音乐</view>
+      <view style="color:#D8D8D8"></view>
+   </view>
+
+
+<scroll-view scroll-x bindscroll="bindscroll"> 
+   <view class="scroll" style="display:flex;flex-direction:row;background-color:">
+      <view wx:for="{{songs}}" wx:for-index="idx" bindtap="songStart" id="{{idx+20}}">
+        <view style="width:28vw;height:40vw;background-color:;margin-right:5vw;margin-top:5vw">
+          <view style="height:28vw;width:28vw;">
+            <image
+            class="list-avatar"
+            style="width:100%;height:100%;border-radius:1vw;"
+            src="{{songs[idx].song.album.blurPicUrl}}"
+            background-size="cover"
+        ></image>
+          </view>
+          <view style="font-size:4vw;overflow:hidden;height:5vw;margin-top:2vw;">
+             {{songs[idx].name}}
+          </view>
+          <view style="font-size:3.5vw;overflow:hidden;height:5vw;color:#A4A4A4;">
+             {{songs[idx].song.artists[0].name}}
+          </view>
+          </view>
+          
+      </view>
+   </view>
+  </scroll-view>
+
+</view>

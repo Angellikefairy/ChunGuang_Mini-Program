@@ -1,0 +1,11 @@
+<import src="../wxParse/wxParse.wxml" />
+<view class="title" style="font-size:4vh;font-weight:bold;margin-left:5vw;margin-top:2vh">
+   {{titleName}}
+</view>
+
+<view class="writer" style="margin-left:5vw;font-size:3.5vw;margin-top:5vh;">
+   文/{{writerName}}
+</view>
+<view style="margin:7vw 3vw 0 5vw;">
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>

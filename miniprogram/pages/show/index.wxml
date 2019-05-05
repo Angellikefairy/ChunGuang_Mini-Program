@@ -1,0 +1,48 @@
+<view class="header" style="width:100%;height:20vh;background-color:;margin-left:10vw;display:flex;flex-direction:column;justify-content:space-between;">
+   <view class="picture" style="background-color:;display:flex;justify-content:space-between;align-items:center;">
+      <view class="text" style='font-size:7vw;background-color:;'>
+      Browse
+   </view>
+
+      <image
+            class="list-avatar"
+            style="width:10vw;height:10vw;border-radius:50%;margin-right:15vw;"
+            src="{{One[0].picture}}"
+            background-size="cover"
+        ></image>
+   </view>
+
+   <view class="directory" style="display:flex;flex-direction:row;margin-bottom:3vh;font-size:4vw;color:#A4A4A4;background-color:">
+      <view class="directory_item" style="padding-right:2vw;background-color:;">Artists</view> 
+      <view class="directory_item" style="padding-right:2vw;background-color:;">Exhibitoins</view> 
+      <view class="directory_item" style="padding-right:2vw;background-color:;">Works</view>
+   </view>
+
+
+</view>
+
+<scroll-view scroll-x bindscroll="bindscroll"> 
+   <view class="scroll" style="display:flex;flex-direction:row;margin-left:10vw;">
+      <view wx:for="{{One}}" wx:for-index="idx" id="{{idx}}" bindtap="toDetail">
+        <view style="width:75vw;height:70vh;background-color:;margin-right:3vw;">
+          <view style="height:25vh;width:100%;">
+            <image
+            class="list-avatar"
+            style="width:100%;height:100%;border-radius:3%;"
+            src="{{One[idx].picture}}"
+            background-size="cover"
+        ></image>
+          </view>
+          <view style="height:25vh;width:100%;background-color:;display:flex;flex-direction:column;align-items:baseline;">
+             <view style="font-size:5.2vw;background-color:;line-height:5vh;margin-top:4vh;height:13vw;">{{One[idx].summary}}</view> 
+             <view style="font-size:4vw;color:#A4A4A4;background-color:;margin-top:5vh;">{{One[idx].title}}</view>
+             </view>
+            <view style="margin-top:15vh;font-size:12px;">
+            {{date}}
+            </view>
+        </view>
+      </view>
+   </view>
+</scroll-view>
+
+

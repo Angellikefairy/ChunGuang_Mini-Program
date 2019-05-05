@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/show/index",
+    "pages/index/index",
+    "pages/show/detail/textDetail",
+    "pages/show/explore/explore",
+    "pages/show/detail/detail",
+    "pages/show/subway/subway",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib"
+  ],
+  "requiredBackgroundModes":[
+    "audio",
+    "backgroundAudioManager"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color":"#dbdbdb",
+    "selectedColor":"#515151",
+    "list": [
+      {
+        "pagePath": "pages/show/index",
+        "iconPath":"images/index.png",
+        "selectedIconPath":"images/index_selected1.png",
+        "text":"首页"
+      },
+      {
+        "pagePath": "pages/show/explore/explore",
+        "iconPath": "images/explore.png",                         "selectedIconPath":"images/explore_selected.png",
+        "text":"发现"
+      },
+      {
+        "pagePath": "pages/show/subway/subway",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me_selected.png",
+        "text":"我"   
+      }
+    ]
+  }
+}

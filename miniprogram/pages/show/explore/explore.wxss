@@ -1,0 +1,27 @@
+page {
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 10vw;
+  padding-bottom: 1vh;
+}
+
+.class1 {
+  display: flex;
+  flex-grow: 1;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.class2 {
+  display: flex;
+  flex-grow: 1;
+  border-bottom: 1px solid black;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

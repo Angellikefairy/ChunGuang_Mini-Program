@@ -1,0 +1,46 @@
+<view class="head" style="width:100%;height:30%;background-color:white;">
+   <view class="avatur" style="width:100%;height:15vh;background-color:;margin-top:2vh;display:flex;flex-direction:row;align-items:center;">
+   <view>
+      <image
+            class="list-avatar"
+            style="width:13vh;height:13vh;border-radius:50%;margin-left:7vw;"
+            src="{{One[0].picture}}"
+            background-size="cover"
+        ></image>
+    </view>
+
+    <view class="name" style="display:flex;flex-direction:column;margin-left:5vw;">
+       <view style="background-color:;font-size:4vh;">Chocolate</view>
+       <view style="background-color:;font-size:3vh;color:#BDBDBD;display:flex;flex-direction:row;align-items:center">
+             <image
+            class="list-avatar"
+            style="width:3vh;height:3vh;"
+            src="/images/zuobiao.png"
+            background-size="cover"
+        ></image>
+        HangZhou
+        </view>
+    </view>
+   </view>
+
+   <view class="list" style="background-color:;display:flex;flex-direction:row;justify-content:space-between;height:10vh;margin:0 3vw 0 3vw">
+      <view style="background-color:;">
+         <view style="color:#848484">Likes</view>
+         <view style="text-align:center">323</view>
+      </view>
+
+      <view style="background-color:;">
+        <view style="color:#848484">Save</view>
+        <view style="text-align:center">2789</view>
+      </view>
+
+      <view style="background-color:;">
+        <view style="color:#848484">Plan</view>
+        <view style="text-align:center">22</view>
+      </view>
+   </view>
+</view>
+
+<view class="next" style="margin-top:1vh;height:20vh;width:100%;background-color:white">
+
+</view>
